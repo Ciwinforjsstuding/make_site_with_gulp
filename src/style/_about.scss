@@ -1,0 +1,25 @@
+.section-about {
+  margin: 100px 0 0 0;
+  &-text {
+    flex-basis: 40%;
+    &__title{
+      font-size: 50px;
+      line-height: 70px;
+      margin: 0 0 20px 0;
+    }
+    &__subtitle{
+      font-size: 16px;
+      line-height: 30px;
+      margin: 0 0 50px 0;
+    }
+    &__btn{
+      cursor: pointer;
+      background: var(--red);
+      border-radius: 10px;
+      color: var(--white);
+      padding: 16px 75px;
+      border: 0;
+      box-shadow: 0 20px 20px rgba(245, 56, 56, 0.35);
+    }
+  }
+}
