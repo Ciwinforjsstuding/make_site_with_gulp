@@ -1,0 +1,16 @@
+@import "./_color.scss";
+@import "./_atomic.scss";
+@import "./_fonts";
+@import "./_header.scss";
+@import "./_about.scss";
+
+.container {
+  margin: 0 150px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Rubik;
+}
+
