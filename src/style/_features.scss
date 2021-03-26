@@ -1,0 +1,25 @@
+.section-features {
+  margin: 100px 0 0 0;
+  &-description {
+    flex-basis: 25%;
+    &__title {
+      font-size: 35px;
+      margin: 0 0 20px 0;
+    }
+    &__subtitle {
+      font-size: 16px;
+      margin: 0 0 20px 0;
+    }
+    &-list {
+      list-style-type: none;
+      &__item {
+        &::before {
+        top: 8px;
+        right: 12px;
+        position: relative;
+        content: url("../img/Group.svg");
+      }
+      }
+    }
+  }
+}

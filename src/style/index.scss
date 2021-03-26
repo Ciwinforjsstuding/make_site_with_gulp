@@ -4,6 +4,7 @@
 @import "./_header.scss";
 @import "./_about.scss";
 @import "./statistics.scss";
+@import "./features.scss";
 
 .container {
   margin: 0 150px;
@@ -21,4 +22,8 @@
 
 .title {
   color: var(--color-title);
+}
+
+.text-bold {
+  font-family: Rubik-Bold;
 }
