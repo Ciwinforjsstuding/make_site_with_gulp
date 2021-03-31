@@ -1,0 +1,75 @@
+.section-plan {
+  margin: 80px 0 0 0;
+  &-title {
+    &__text {
+      font-size: 35px;
+      margin: 0 0 20px 0;
+    }
+    &__subtitle {
+      display: block;
+      font-size: 16px;
+      margin: 0 0 60px 0;
+      width: 33%;
+      text-align: center;
+      }
+    }
+  &-cards {
+    
+  }
+  &-card {
+    cursor: pointer;
+    background: var(--white);
+    border: 2px solid var(--color-border-card);
+    border-radius: 10px;
+    padding: 70px 70px 50px 70px;
+    &__img {
+      margin: 0 0 30px 0;
+    }
+    &__title {
+      font-size: 18px;
+      margin: 0 0 30px 0;
+    }
+    &__list {
+      list-style-type: none;
+      margin: 0 0 130px 0;
+    }
+    &__item {
+      margin: 10px 0;
+      font-size: 14px;
+      &::before {
+        // top: 8px;
+        right: 25px;
+        position: relative;
+        content: url("../img/Vector.svg");
+      }
+    }
+    &__price {
+      font-size: 25px;
+      margin: 0 0 20px 0;
+    }
+    &-btn {
+      border-radius: 50px;
+      border: 2px solid var(--red);
+      padding: 13px 60px;
+      
+      background: var(--white);
+      &__text {
+        font-size: 16px;
+        color: var(--red);
+      }
+    }
+  }
+}
+
+.card-border-active { 
+  border: 2px solid var(--color-card-active);
+}
+
+.card-btn-active {
+  background: var(--color-card-active);
+  box-shadow: 0 10px 20px rgba(245, 56, 56, 0.35);
+}
+
+.card-btn-text-active {
+  color: var(--white);
+}

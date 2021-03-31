@@ -1,1 +1,3 @@
-// @@include("./alert.js");
+document.addEventListener("DOMContentLoaded", () => {
+  @@include("./cardActive.js");
+})
