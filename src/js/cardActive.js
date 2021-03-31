@@ -1,19 +1,20 @@
 const cards = document.querySelectorAll("[data-card]");
-// console.log()
+
+const clearCard = () => {
+  if (document.querySelectorAll(".card-border-active").length > 0) {
+    cards.forEach(node => {
+      node.classList.remove("card-border-active");
+      node.childNodes[9].classList.remove("card-btn-active");
+      node.childNodes[9].childNodes[1].classList.remove("card-btn-text-active");
+    });
+  }
+} 
+
 cards.forEach(node => {
   node.addEventListener("click", () => {
-    const cardBtn = node.childNodes[9];
-    const cardBtnText = node.childNodes[9].childNodes[1];
-    const isActive =  node.classList.contains("card-border-active") ? true : false;
-    if (isActive) {
-      cardBtn.classList.remove("card-btn-active");
-      node.classList.remove("card-border-active");
-      cardBtnText.classList.remove("card-btn-text-active");
-    } else {
-      node.classList.add("card-border-active");
-      cardBtn.classList.add("card-btn-active");
-      cardBtnText.classList.add("card-btn-text-active");
-    }
-    console.log()
+    clearCard();
+    node.classList.add("card-border-active");
+    node.childNodes[9].classList.add("card-btn-active");
+    node.childNodes[9].childNodes[1].classList.add("card-btn-text-active");
   })
 })

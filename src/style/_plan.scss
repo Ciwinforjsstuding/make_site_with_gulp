@@ -13,9 +13,6 @@
       text-align: center;
       }
     }
-  &-cards {
-    
-  }
   &-card {
     cursor: pointer;
     background: var(--white);
@@ -37,7 +34,6 @@
       margin: 10px 0;
       font-size: 14px;
       &::before {
-        // top: 8px;
         right: 25px;
         position: relative;
         content: url("../img/Vector.svg");
@@ -51,7 +47,6 @@
       border-radius: 50px;
       border: 2px solid var(--red);
       padding: 13px 60px;
-      
       background: var(--white);
       &__text {
         font-size: 16px;
