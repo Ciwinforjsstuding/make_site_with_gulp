@@ -1,0 +1,122 @@
+.section-review-user {
+  &-heading {
+    margin: 120px 0 0 0;
+    &__title {
+      display: block;
+      width: 21%;
+      text-align: center;
+      margin: 0 0 20px 0;
+    }
+    &__subtitle {
+      display: block;
+      width: 32%;
+      text-align: center;
+      margin: 0 0 60px 0;
+    }
+  }
+  &-slider-item {
+    width: 400px;
+    height: 230px;
+    border: 2px solid #DDDDDD;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    &-header {
+      width: 100%;
+      margin: 0 0 20px 0;
+      &-full-name {
+        flex-basis: 43%;
+        &__firstname {
+          font-size: 18px;
+        }
+        &__lastname {
+          font-size: 14px;
+        }
+      }
+      &-appraisal {
+        flex-basis: 20%;
+        &__number {
+          height: 13px;
+        }
+      }
+    }
+    &__description {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+  &-slider-setting {
+    margin: 60px 0 0 0;
+    &-index-slid {
+      flex-basis: 6%;
+      margin: 0 0 0 60px;
+    }
+    &-control {
+      margin: 0 60px 0 0;
+      &__right {
+        margin: 0 20px 0 0;
+      }
+    }
+  }
+}
+
+.arrow {
+  padding: 20px;
+  border: 2px solid #F53838;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.arrow_active {
+  background: var(--color-card-active);
+  padding: 20px;
+  border: 2px solid #F53838;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.index-circle-passive {
+  width: 15px;
+  height: 15px;
+  background: var(--bg-color-passive-circle);
+  border-radius: 10px;
+}
+
+.index-circle-active {
+  width: 45px;
+  height: 15px;
+  background: var(--color-card-active);
+  border-radius: 10px;
+}
+
+.animation-active-circle {
+  animation-name: activatingCircle;
+  animation-duration: 1.5s;
+}
+
+.animation-passev-circle {
+  animation-name: unActiveCircle;
+  animation-duration: 1.5s;
+}
+
+@keyframes activatingCircle {
+  from {
+    width: 15px;
+    background: var(--bg-color-passive-circle);
+  }
+  to {
+    width: 45px;
+    background: var(--color-card-active);
+  }
+}
+
+@keyframes unActiveCircle {
+  from {
+    width: 45px;
+    background: var(--color-card-active);
+  }
+  to {
+    width: 15px;
+    background: var(--bg-color-passive-circle);
+  }
+}
