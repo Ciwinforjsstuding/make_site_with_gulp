@@ -15,14 +15,13 @@ const addAnimationOnCircle = (i) => {
 }
 
 const closeAnimationCircle = () => {
-  //FIXME: анимация закрытия нет 
   circlesIndexSlide.forEach(circleIndex => {
     if (circleIndex.classList.contains("animation-active-circle")) {
       circleIndex.classList.remove("animation-active-circle");
       circleIndex.classList.remove("index-circle-active");
       circleIndex.classList.add("animation-passev-circle");
       circleIndex.classList.add("index-circle-passive");
-      setTimeout(circleIndex.classList.remove("animation-passev-circle"), 1500);
+      setTimeout(() => circleIndex.classList.remove("animation-passev-circle"), 1500);
     }
   });
 }
