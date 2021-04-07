@@ -2,43 +2,56 @@ header {
   margin: 45px 0 0 0;
 }
 
-.header-logo {
-  cursor: pointer;
-}
-
-.header-logo__text {
-  margin: 0 0 0 10px;
-}
-
-.header-menu {
-  flex-basis: 40%;
-}
-
-.header-menu__item {
-  color: var(--color-sub-title);
-  font-size: 16px;
-}
-
-.header-auth {
-  flex-basis: 17%;
-}
-
-.header-auth__signin {
-  cursor: pointer;
-  background: var(--white);
-  border: 0;
-  font-size: 16px;
-  color: var(--color-title);
-  font-family: Rubik-Bold;
-}
-
-.header-auth__signup {
-  cursor: pointer;
-  background: var(--white);
-  font-size: 16px;
-  color: var(--red);
-  font-family: Rubik-Bold;
-  border: solid 1px var(--red);
-  border-radius: 50px;
-  padding: 12px 45px;
+.header {
+  &-logo {
+    cursor: pointer;
+    outline: none;
+    &__text {
+      margin: 0 0 0 10px;
+    }
+  }
+  &-menu {
+    flex-basis: 40%;
+    &__item {
+      cursor: pointer;
+      color: var(--color-sub-title);
+      font-size: 16px;
+      &:after {//просто анимация подчёркивания текста
+        display: block;
+        position: relative;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--color-sub-title);
+        content: "";
+        transition: width 0.3s ease-out;
+      }
+      &:hover::after,
+      :focus:after {
+        width: 100%;
+      }
+    }
+  }
+  &-auth {
+    flex-basis: 17%;
+    &__signin {
+      cursor: pointer;
+      background: var(--white);
+      border: 0;
+      font-size: 16px;
+      color: var(--color-title);
+      font-family: Rubik-Bold;
+    }
+    &__signup {
+      cursor: pointer;
+      outline: none;
+      background: var(--white);
+      font-size: 16px;
+      color: var(--red);
+      font-family: Rubik-Bold;
+      border: solid 1px var(--red);
+      border-radius: 50px;
+      padding: 12px 45px;
+    }
+  }
 }

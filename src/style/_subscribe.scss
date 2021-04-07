@@ -1,0 +1,33 @@
+.section-subscribe {
+  position: relative;
+  top: 11rem;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 50px 70px;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px var(--color-shodow-subscribe);
+  margin: 0 0 60px 0;
+  z-index: 2;
+  &-text {
+    &__title {
+      font-size: 35px;
+      display: block;
+      width: 56%;
+      margin: 0 0 20px 0;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+    outline: none;
+    background: var(--color-card-active);
+    color: var(--white);
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(245, 56, 56, 0.35);
+    border: 0px;
+    padding: 18px 65px;
+  }
+}

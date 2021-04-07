@@ -8,7 +8,8 @@
 @import "./plan.scss";
 @import "./_who-use.scss";
 @import "./_reviewUser.scss";
-
+@import "./_subscribe.scss";
+@import "./_footer.scss";
 .container {
   margin: 0 150px;
 }
@@ -29,4 +30,14 @@
 
 .text-bold {
   font-family: Rubik-Bold;
+}
+
+.card-border-active { 
+  border: 2px solid var(--color-card-active);
+}
+
+.card-btn-active {
+  background: var(--color-card-active);
+  box-shadow: 0 10px 20px rgba(245, 56, 56, 0.35);
+  color: var(--white);
 }

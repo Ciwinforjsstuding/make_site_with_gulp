@@ -44,6 +44,8 @@
       margin: 0 0 20px 0;
     }
     &-btn {
+      cursor: pointer;
+      outline: none;
       border-radius: 50px;
       border: 2px solid var(--red);
       padding: 13px 60px;
@@ -52,14 +54,4 @@
       color: var(--red);
     }
   }
-}
-
-.card-border-active { 
-  border: 2px solid var(--color-card-active);
-}
-
-.card-btn-active {
-  background: var(--color-card-active);
-  box-shadow: 0 10px 20px rgba(245, 56, 56, 0.35);
-  color: var(--white);
 }
