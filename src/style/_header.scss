@@ -16,6 +16,7 @@ header {
       cursor: pointer;
       color: var(--color-sub-title);
       font-size: 16px;
+      text-decoration: none;
       &:after {//просто анимация подчёркивания текста
         display: block;
         position: relative;

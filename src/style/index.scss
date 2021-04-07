@@ -10,6 +10,24 @@
 @import "./_reviewUser.scss";
 @import "./_subscribe.scss";
 @import "./_footer.scss";
+
+:root {
+  // для FireFox
+  scrollbar-width: auto;
+  scrollbar-color: var(--red) var(--white);
+}
+  //отсальные
+html::-webkit-scrollbar {
+  width: 12px;
+  height: 20px;
+  background-color: rgb(243, 243, 243);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--red);
+  border-radius: 5px;
+}
+
 .container {
   margin: 0 150px;
 }

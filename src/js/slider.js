@@ -8,9 +8,6 @@ const rightArrow = document.querySelector(".section-review-user-slider-setting-c
 const leftArrow = document.querySelector(".section-review-user-slider-setting-control__left");
 const circlesIndexSlide = document.querySelectorAll(".index-circle-passive");
 
-const fuck = document.querySelector(".arrow_active");
-// console.log(fuck.src)
-
 const addAnimationOnCircle = (i) => {
   circlesIndexSlide[i].classList.remove("index-circle-passive");
   circlesIndexSlide[i].classList.add("animation-active-circle");
@@ -47,6 +44,7 @@ const changeSlid = (i) => {
 
 const nextSlid = (event) => {
   const btn = event.target;
+  changeSlid(slideIndex += 1);
   if (btn.classList.contains("arrow-right")) {
     btn.src = urlRightArrow;
     btn.classList.remove("arrow-right");
@@ -56,11 +54,12 @@ const nextSlid = (event) => {
   btn.src = "http://localhost:3000/img/leftArrow.svg";
   btn.classList.add("arrow-right");
   btn.classList.remove("arrow_active");
-  changeSlid(slideIndex += 1);
 }
 
 const prevSlid = (event) => {
   const btn = event.target;
+  
+  changeSlid(slideIndex -= 1);
   if (btn.classList.contains("arrow_active-left")) {
     btn.src = urlLeftArrow;
     btn.classList.add("arrow");
@@ -70,8 +69,6 @@ const prevSlid = (event) => {
   btn.src = urlRightArrow;
   btn.classList.add("arrow_active-left");
   btn.classList.remove("arrow");
-
-  changeSlid(slideIndex -= 1);
 }
 
 leftArrow.addEventListener("click", prevSlid);
