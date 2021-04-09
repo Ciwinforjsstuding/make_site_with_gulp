@@ -1,7 +1,7 @@
 let slideIndex = 1;
 
-const urlLeftArrow = "http://localhost:3000/img/leftArrow.svg";
-const urlRightArrow = "http://localhost:3000/img/rightArrow.svg";
+const urlLeftArrow = "../img/leftArrow.svg";
+const urlRightArrow = "../img/rightArrow.svg";
 
 const slides = document.querySelectorAll(".section-review-user-slider-item");
 const rightArrow = document.querySelector(".section-review-user-slider-setting-control__right");
@@ -50,7 +50,7 @@ const nextSlid = (event) => {
     btn.classList.add("arrow_active");
     return;
   }
-  btn.src = "http://localhost:3000/img/leftArrow.svg";
+  btn.src = urlLeftArrow;
   btn.classList.add("arrow-right");
   btn.classList.remove("arrow_active");
 }
