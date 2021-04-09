@@ -28,5 +28,9 @@
     box-shadow: 0 10px 40px rgba(245, 56, 56, 0.35);
     border: 0px;
     padding: 18px 65px;
+    &:active {
+      background: #fd425ec9;
+      box-shadow: 0 0 0 rgba(245, 56, 56, 0.35);
+    }
   }
 }
